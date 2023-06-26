@@ -1,0 +1,7 @@
+lib/
+bin/
+build/
+log/
+response_data/
+cmake-build-debug/
+mcs_in_press_dict
