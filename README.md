@@ -55,6 +55,7 @@ presstest
 - v2版本（6.19更新）: 通过curl_multi_perform使用一个线程异步发送请求（单线程但是使用io复用(select)），见request_v2.h。生产者线程还是使用v1版本，但消费者线程为RequestV2::mult_build_and_send_v2， 与一个定时器绑定，到定时时间后将easy_curl注册到multi_hand中。
 
 ### UML类图
+![img](https://github.com/linkxxxup/presstest/blob/0ea38d536e99b5081b2cc38c4905780ce4e6efb8/structure.png)
 
 ### 特点：
 - 通过定时器实现精准的qps，1qps即每秒发送一个请求。可以通过日志的时间戳查看请求是否以设定的qps来发送。
