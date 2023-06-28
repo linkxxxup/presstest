@@ -18,7 +18,7 @@ function main(){
     echo '--------output---------'
     cd ../bin
     # ./exepress.out --port1=$1 --port2=$2 --dic_path=$3 --time_=$4 --qps=$5
-     ./exepress.out --port1=8122 --port2=8123 --dic_path=/home/cxkgg/Documents/presstest/mcs_in_press_dict --time_=5 --qps=1
+     ./exepress.out --port1=8122 --port2=8123 --dic_path=/home/zhangguangyuan/Documents/presstest/mcs_in_press_dict --time_=5 --qps=1
 }
 
 main "$@"
